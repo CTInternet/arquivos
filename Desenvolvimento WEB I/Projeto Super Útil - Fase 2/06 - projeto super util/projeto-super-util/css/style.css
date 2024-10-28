@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* Estilos globais */
+/* Reset do CSS */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif
+}
+
+
+a {
+    text-decoration: none;
+}
+header {
+    background-color: #ff8c00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+
+ 
+body {
+    background-color: #f4f4f4;
+}
+
+
+.receitas-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem de linha se necessário */
+    gap: 20px; /* Espaçamento entre as divs de receita */
+}
+
+.receita-item {
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 300px; /* Define a largura da div */
+    border: 1px solid #ddd; /* Borda ao redor da div */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receita-item img {
+    width: 100%; /* A imagem se ajusta à largura da div */
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Ajusta a imagem mantendo a proporção e preenchendo a área */
+    display: block; /* Remove o espaço em branco ao redor da imagem */
+    border-radius: 5px; /* Opcional: Bordas arredondadas */
+}
